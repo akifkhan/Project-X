@@ -1,0 +1,369 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"brand",
+				"brand_name"
+			],
+			[
+				"bra",
+				"brand-name"
+			],
+			[
+				"colo",
+				"colours"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bran",
+				"name_below_brand"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"dea",
+				"details"
+			],
+			[
+				"pro",
+				"propernouns"
+			],
+			[
+				"be",
+				"BeautifulSoup"
+			],
+			[
+				"rem",
+				"remove_stopword"
+			],
+			[
+				"stop",
+				"stopwords"
+			],
+			[
+				"div",
+				"div_data"
+			],
+			[
+				"name",
+				"name_below_brand"
+			],
+			[
+				"htm",
+				"html_vars"
+			],
+			[
+				"send",
+				"sendname"
+			],
+			[
+				"html",
+				"html_vars"
+			],
+			[
+				"template",
+				"templateid"
+			],
+			[
+				"tem",
+				"templateid"
+			],
+			[
+				"te",
+				"templateid"
+			],
+			[
+				"sub",
+				"subvals_temp"
+			],
+			[
+				"col",
+				"colname_temp"
+			],
+			[
+				"re",
+				"replyemail"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"mail",
+				"mail_obj"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "links.py",
+			"settings":
+			{
+				"buffer_size": 4109,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 310,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 314.0,
+		"selected_items":
+		[
+		],
+		"width": 343.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jabong/Documents/crawler/skipped_links.csv",
+		"/home/jabong/Documents/crawler/product_links.csv",
+		"/home/jabong/Documents/jabongmails/bazinga/index.php",
+		"/home/jabong/Documents/crawler/links.py",
+		"/home/jabong/Downloads/list_color.csv",
+		"/home/jabong/Documents/crawler/stopwords.py",
+		"/home/jabong/Documents/jabongmails/bazinga/process.php",
+		"/home/jabong/Documents/jabongmails/bazinga/sample.csv",
+		"/home/jabong/Documents/jabongmails/bazinga/input.php",
+		"/home/jabong/Documents/jabongmails/bazinga/template.php",
+		"/home/jabong/Documents/jabongmails/mails bazinga/second.php",
+		"/home/jabong/Documents/jabongmails/bazinga/second.php",
+		"/home/jabong/Documents/jabongmails/bazinga/js/script.js",
+		"/home/jabong/Downloads/Dynamic-Form-Processing-with-PHP/index.html",
+		"/home/jabong/Documents/jabongmails/bazinga/display.php",
+		"/home/jabong/Documents/php.ini",
+		"/home/jabong/Documents/jabongmails/mails bazinga/index.php",
+		"/home/jabong/Downloads/professions.sql",
+		"/home/jabong/Documents/jabongmails/mails bazinga/header.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"\\n",
+			"$no_of_emails",
+			"$san",
+			"$dsatz",
+			"$dsat",
+			"12",
+			"windows",
+			"\"",
+			"check",
+			"care@jabong.com",
+			"\n$specialChars"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"$total_emails",
+			"$email_counter",
+			"$csv_data"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "links.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3607,
+								3607
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1781.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "descrepancy-software-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 160.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
