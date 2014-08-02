@@ -42,79 +42,90 @@ def get_articles(url):
 
 	#try:
 
-		html = urlopen(url).read()			#opens the url and fetch HTML
-
-		soup = BeautifulSoup(html, "lxml")			#opens HTML to be parsed
-
-		name = soup.find("span","fs11 c222").string.strip('\t\n ')
-		brand_name = soup.find("span","brand-name fs22 full-width").string.strip('\t\n ')
-		name_below_brand = soup.find("span", "mb3 full-width").string.strip('\t\n ')
-		
-		div_data = soup.find("div",{"class":"product-info c999 fs12 mb20"})
-		for a in div_data.findAll("p"):
-			if a:
-				description = a.text.strip(' ')
-
-		row = div_data.findAll("tr")
-		temp=len(row)
-		
-		print count
-		print url
-		print name
-		print brand_name
-		print name_below_brand
-		print description
-
-		# Removing stop words 
-
-	#	remove_stopword(description)
-		
-		details={}
-
-		# 	"DATA IN TABLE"
-		
-		for i in range(0,temp-2):
+		html = urlopen(url).read()						# opens the url and fetch HTML
+		soup = BeautifulSoup(html, "lxml")				# opens HTML to be parsed
+		if  soup.find("span","fs18"):					# checks whether link is live or not
+			file =open('skipped_links.csv','a+')
+			file.write(url)
+		else:	
+			name = soup.find("span","fs11 c222").string.strip('\t\n ')
+			brand_name = soup.find("span","brand-name fs22 full-width").string.strip('\t\n ')
+			name_below_brand = soup.find("span", "mb3 full-width").string.strip('\t\n ')
 			
-			cells=row[i].findAll("td", limit=2)
+			div_data = soup.find("div",{"class":"product-info c999 fs12 mb20"})
+			for a in div_data.findAll("p"):
 
-			details[cells[0].string.lower()] = cells[1].string.lower()
-		
-		print details.keys()
 
-		if 'color' in details.keys():
-			color = details['color']
-			print 'lol'
-		if 'material' in details.keys():
-			material = details['material']
-			print 'lol1'
+
+					description = a.text.strip(' ')
+
+			row = div_data.findAll("tr")
+			temp = len(row)
 			
-		print color
-		print material
+			print count
+			print url
+
+			print name
+			print brand_name
+			print name_below_brand
+			print description
+
+			name = name.split()
+			brand_name = brand_name.split()
+			name_below_brand = name_below_brand.split()
+			description = description.split()
 
 			
-		print "___________________________________________________________________________________________________________\n\n"
 
-		if brand_name == name_below_brand:
-			error = error - 10
-			print 'no error in name_below_brand'
+			# Removing stop words 
 
-		if color in color_list:
-			if color in brand_name:
+		#	remove_stopword(description)
+			
+			details={}
+
+			# 	"DATA IN TABLE"
+			
+			for i in range(0,temp-2):
+				
+				cells=row[i].findAll("td", limit=2)
+				details[cells[0].string.lower()] = cells[1].string.lower()
+			
+			print details.keys()
+
+			if 'color' in details.keys():
+				color = details['color']
+				print color
+				print 'lol'
+			if 'material' in details.keys():
+				material = details['material']
+				print 'lol1'
+				print material
+				
+			print "___________________________________________________________________________________________________________\n\n"
+
+			if name == name_below_brand:
 				error = error - 10
-				print 'error: no color in brand_name'
+				print 'no error in name_below_brand'
 
-		else:
-			print 'error: color not found in colors list'
+			if color in color_list:
+				if color in name:
+					error = error - 10
+					print 'error: no color in brand_name'
+
+			else:
+				print 'error: UNKNOWN COLOR - color not found in colors list'
 
 
 
-#	except:
-		
-	#	print "skipped link number:", count
-		
-	#	file =open('skipped_links.csv','a+')
-	#	file.write(url)
-	#	pass
+
+
+	#	except:
+			
+		#	print "skipped link number:", count
+			
+		#	file =open('skipped_links.csv','a+')
+		#	file.write(url)
+		#	pass
 
 def remove_stopword(data):
 	
