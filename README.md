@@ -1,7 +1,6 @@
 Crawler for jabong.com
 =======
 
-A simple crawler for scrapping articles from Bloomberg.com.
 
 Python Modules Dependencies: 
 
@@ -13,12 +12,4 @@ Run the links.py file
 
 Functionality
 
-The crawler extracted the article content from the website,
-
-The Information fetched by it are:
-1. 
-2. 
-3.	
-4. 
-5. 
-6. 
+The crawler extracted the article content from the website, and check any descrepancy in the product page.
